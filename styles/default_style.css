@@ -33,6 +33,7 @@ div.monolith{
     max-width: 60%;
     max-height: 100%;
     padding: 4%;
+    padding-top: 20px;
 }
 
 div.monolith h1 ,
@@ -53,15 +54,15 @@ div.name-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #424242;
-    border-radius: 40px;
+    background-color: #64657e;
+    border-radius: 27px;
     max-height: 80px;
 }
 div.name-bar img{
     max-height:70px;
     width: auto;
     height: auto;
-    border-radius: 40px;
+    border-radius: 21px;
     margin: 1%;
     margin-right: 20px;
 }
@@ -84,7 +85,7 @@ div.screen-bar{
 div.screen-bar img{
     width: auto;
     height: auto;
-    max-height: 160px;
+    max-height: 140px;
     border-radius: 10px;
 
 }
