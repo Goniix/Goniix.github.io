@@ -8,6 +8,11 @@ body{
     margin: 0px;
 }
 
+a{
+    color: purple;
+    text-decoration: none;
+}
+
 div.main{
     display: flex;
     flex-direction: row;
@@ -34,6 +39,8 @@ div.project-box{
     background-color: black;
     border-radius: 40px;
     padding: 15px;
+    max-width: 100%;
+    width: max-content;
 }
 
 div.name-bar{
@@ -55,4 +62,27 @@ div.name-bar img{
 
 div.project-box p{
     font-size: large;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+div.screen-bar{
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    white-space: nowrap;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+div.screen-bar img{
+    width: auto;
+    height: auto;
+    max-height: 160px;
+    border-radius: 10px;
+
+}
+
+img.clickable-image:hover{
+    cursor: pointer;
 }
