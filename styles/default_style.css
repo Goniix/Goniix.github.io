@@ -1,10 +1,16 @@
+@font-face {
+    font-family: hammersmith;
+    src: url(HammersmithOne-Regular.ttf);
+}
+
 body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: black;
     color: white;
-    font: 2em "Hammersmith One";
+    font: 2em hammersmith;
+    
     margin: 0px;
 }
 
