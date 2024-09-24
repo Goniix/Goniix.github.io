@@ -93,3 +93,7 @@ div.screen-bar img{
 img.clickable-image:hover{
     cursor: pointer;
 }
+
+div.monolith>p{
+    font-size: medium;
+}
