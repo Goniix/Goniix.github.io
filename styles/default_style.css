@@ -13,8 +13,17 @@ body{
     
     margin: 0px;
 }
+
+h1{
+  font-size: 2em;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
 p{
-    font-size: large;
+    font-size: 1em;
 }
 
 a{
@@ -43,6 +52,7 @@ div.monolith h1 ,
 div.monolith h2{
     margin: 0px;
 }
+
 
 div.project-box{
     margin-top: 20px;
@@ -97,9 +107,6 @@ img.clickable-image:hover{
     cursor: pointer;
 }
 
-div.monolith>p{
-    font-size: medium;
-}
 
 /* Add a black background color to the top navigation */
 .topnav {
