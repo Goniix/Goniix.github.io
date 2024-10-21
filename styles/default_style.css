@@ -160,3 +160,9 @@ div.monolith>p{
     }
   }
   
+  #compet{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
