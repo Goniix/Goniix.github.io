@@ -70,6 +70,7 @@ div.name-bar{
     background-color: #64657e;
     border-radius: 27px;
     max-height: 80px;
+    font-size: 1.5em;
 }
 div.name-bar img{
     max-height:70px;
@@ -81,7 +82,7 @@ div.name-bar img{
 }
 
 div.project-box p{
-    font-size: large;
+    font-size: 1.5em;
     margin-right: 10px;
     margin-left: 10px;
 }
