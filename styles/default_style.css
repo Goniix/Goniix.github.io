@@ -170,6 +170,10 @@ img.clickable-image:hover{
     }
   }
 
-  #real{
+  #home, #formation, #compet, #real, #contact{
     scroll-margin-top: 100px;
+  }
+
+  #formation, #compet{
+    align-self: left;
   }
