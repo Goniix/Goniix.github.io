@@ -43,6 +43,7 @@ div.monolith{
     align-items: center;
     background-color: #36373f;
     max-width: 60%;
+    min-width: 60%;
     max-height: 100%;
     padding: 4%;
     padding-top: 20px;
@@ -53,17 +54,29 @@ div.monolith h2{
     margin: 0px;
 }
 
+#project-wrapper{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  max-width: 100%;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  margin-left: 10px;
+  margin-right: 10px;
+  flex-shrink: 1; /* Added to allow shrinking */
+}
 
-div.project-box{
+.project-box{
     margin-top: 20px;
     background-color: black;
     border-radius: 40px;
     padding: 15px;
-    max-width: 100%;
-    width: max-content;
+    flex-shrink: 0;
+    width: fit-content;
+    scroll-snap-align: start; /* Added to align slides */
 }
 
-div.name-bar{
+.name-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -72,7 +85,7 @@ div.name-bar{
     max-height: 80px;
     font-size: 1.5em;
 }
-div.name-bar img{
+.name-bar img{
     max-height:70px;
     width: auto;
     height: auto;
@@ -81,12 +94,12 @@ div.name-bar img{
     margin-right: 20px;
 }
 
-div.project-box p{
+.project-box p{
     margin-right: 10px;
     margin-left: 10px;
 }
 
-div.screen-bar{
+.screen-bar{
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -95,7 +108,7 @@ div.screen-bar{
     margin-bottom: 1%;
 }
 
-div.screen-bar img{
+.screen-bar img{
     width: auto;
     height: auto;
     max-height: 140px;
@@ -103,7 +116,7 @@ div.screen-bar img{
 
 }
 
-img.clickable-image:hover{
+.clickable-image:hover{
     cursor: pointer;
 }
 
@@ -177,3 +190,32 @@ img.clickable-image:hover{
   #formation, #compet{
     align-self: flex-start;
   }
+
+/* Add styles for the carousel buttons */
+.carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    height: 100%;
+    border-radius: 40px;
+}
+@media (max-width: 600px) {
+    .carousel-button {
+        display: none;
+    }
+}
+
+#carousel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
