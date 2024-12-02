@@ -1,0 +1,7 @@
+{
+    "skills": [
+        { "name": "HTML", "level": "Expert" },
+        { "name": "CSS", "level": "Advanced" },
+        { "name": "JavaScript", "level": "Intermediate" }
+    ]
+}

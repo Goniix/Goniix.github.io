@@ -16,10 +16,12 @@ body{
 
 h1{
   font-size: 2em;
+  margin: 0px;
 }
 
 h2{
   font-size: 1.5em;
+  margin: 0px;
 }
 
 p{
@@ -46,11 +48,6 @@ div.monolith{
     max-height: 100%;
     padding: 4%;
     padding-top: 20px;
-}
-
-div.monolith h1 ,
-div.monolith h2{
-    margin: 0px;
 }
 
 #project-wrapper{

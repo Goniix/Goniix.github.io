@@ -17,6 +17,20 @@ function scrollCarousel(direction) {
         wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
     }
 }
+
+async function getSkills(){
+  const response = await fetch("skills.json")
+  if (!response.ok) {
+    throw new Error(`Failed to fetch data: ${response.statusText}`);
+  }
+  return response.json(); // Parse the JSON response
+  
+  // .then(data => {
+  //   return data.skills;
+  // })
+  // .catch(error => console.error("Error fetching JSON:", error));
+}
+
 $(document).ready(function () {
   $('a[href*="#"]').on("click", function (e) {
     e.preventDefault();
@@ -28,6 +42,16 @@ $(document).ready(function () {
       "swing"
     );
   });
+
+  // Reference the skill container
+  const skillContainer = document.getElementById("skill-container");
+    const skills = getSkills();
+    skills.forEach((skill) => {
+      const skillDiv = document.createElement("div");
+      skillDiv.classList.add("skill-box");       
+      skillDiv.innerHTML = `<strong>${skill.name}</strong>: ${skill.level}`;
+      skillContainer.appendChild(skillDiv);
+    });
 
   $(window).on("scroll load", function () {
     $("section").each(function () {
