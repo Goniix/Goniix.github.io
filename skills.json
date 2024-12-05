@@ -1,7 +1,18 @@
-{
-    "skills": [
-        { "name": "HTML", "level": "Expert" },
-        { "name": "CSS", "level": "Advanced" },
-        { "name": "JavaScript", "level": "Intermediate" }
-    ]
-}
+[
+    { "name": "GameMaker", "level": "Intermediate" , "icon": "https://cdn2.steamgriddb.com/icon/e500b7708a865ec27eef36c33953b06e.ico" },
+    { "name": "Godot", "level": "Intermediate" , "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg" },
+    { "name": "Java", "level": "Intermediate" , "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/2/2e/Java_Logo.svg/322px-Java_Logo.svg.png?20061227215918" },
+    { "name": "HTML", "level": "Expert", "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" },
+    { "name": "JavaScript", "level": "Intermediate" , "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png?20141107110902" },
+    { "name": "CSS", "level": "Advanced", "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/363px-CSS3_logo_and_wordmark.svg.png"},
+    { "name": "Postgres", "level": "Intermediate" , "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968342.png" },
+    { "name": "C#", "level": "Intermediate" , "icon": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png" },
+    { "name": "React", "level": "Intermediate" , "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" },
+    { "name": "Git", "level": "Intermediate" , "icon": "https://cdn3d.iconscout.com/3d/free/thumb/free-git-9294878-7578021.png?f=webp" },
+    { "name": "C", "level": "Intermediate" , "icon": "https://img.icons8.com/?size=512&id=40670&format=png" },
+    { "name": "Python", "level": "Intermediate" , "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" },
+    { "name": "JavaFx", "level": "Intermediate" , "icon": "https://www.qftest.com/fileadmin/Webdata/logos-icons/JavaFX.png" },
+    { "name": "Unity", "level": "Intermediate" , "icon": "https://cdn-icons-png.flaticon.com/512/5969/5969347.png" },
+    { "name": "Arduino", "level": "Intermediate" , "icon": "https://img.icons8.com/color/512/arduino.png" },
+    { "name": "Rust", "level": "Intermediate" , "icon": "https://static-00.iconduck.com/assets.00/rust-icon-2048x2048-lfzjbuc7.png" }
+]

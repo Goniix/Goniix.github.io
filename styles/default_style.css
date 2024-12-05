@@ -7,11 +7,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: black;
+    /* background-color: black;*/
+    background-image: linear-gradient(black, purple);
     color: white;
     font: 1em hammersmith;
-    
+    /* background-attachment: fixed; */
     margin: 0px;
+}
+
+section{
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 h1{
@@ -42,12 +48,60 @@ div.main{
 div.monolith{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:baseline;
     background-color: #36373f;
-    width: 100%;
+    width: 85%;
     max-height: 100%;
     padding: 4%;
     padding-top: 20px;
+}
+
+#Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100%;
+}
+
+#skill-container{
+  /* background-color: black; */
+  background-image: linear-gradient(black, rgba(128, 0, 128, 0.61));
+  background-attachment: fixed;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  max-width: 85%;
+  }
+
+.skill-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background-color: #9c9cb1;
+  border-radius: 20px;
+  padding: 3%;
+  transition: all .2s ease-in-out; 
+
+}
+
+.skill-box:hover{
+  background-color: #aaa7c2;
+  transform: scale(1.1); 
+}
+
+.skill-box img{
+  max-height:100px;
+  max-width:100px;
+  border-radius: 5px;
+  margin: 1%;
 }
 
 #project-wrapper{
@@ -63,11 +117,19 @@ div.monolith{
 }
 
 .project-box{
+    /* display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    max-width: inherit;
+    flex-shrink: 1; /* Added to allow shrinking */
+ */
+
+
     margin-top: 20px;
     background-color: black;
     border-radius: 40px;
     padding: 15px;
-    flex-shrink: 0;
+    flex-shrink: 0; 
     width: fit-content;
     scroll-snap-align: start; /* Added to align slides */
 }
@@ -93,8 +155,7 @@ div.monolith{
 }
 
 .project-box p{
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 1%;
 }
 @media (max-width: 600px) {
   .project-box p {
@@ -107,20 +168,20 @@ div.monolith{
     flex-direction: row;
     overflow: auto;
     white-space: nowrap;
-    margin-left: 1%;
-    margin-bottom: 1%;
+    padding: 1%;
+    max-height: 140px;
+
 }
 
-.screen-bar img{
-    width: auto;
-    height: auto;
-    max-height: 140px;
-    border-radius: 10px;
-
+.clickable-image{
+  border-radius: 10px;
+  max-width: 140px;
+  transition: all .2s ease-in-out; 
 }
 
 .clickable-image:hover{
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 
@@ -221,5 +282,34 @@ div.monolith{
     max-width: 100%;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 2000px;
+    margin-bottom: 200px;
+}
+
+section h1{
+  align-self: start;
+  margin-bottom: 15px;
+}
+
+section>p{
+  max-width: 85%;
+  margin-left: 5%;
+}
+
+#Intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 50px; */
+}
+#Intro img{
+  max-width: 20%;
+  border-radius: 15px;
+  margin: 1%;
+  filter: drop-shadow(0 0 0.75rem purple);
+  transition: all .2s ease-in-out; 
+}
+
+#Intro img:hover { 
+  transform: scale(1.1); 
 }

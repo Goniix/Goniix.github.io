@@ -19,16 +19,12 @@ function scrollCarousel(direction) {
 }
 
 async function getSkills(){
-  const response = await fetch("skills.json")
+  console.log("Fetching skills");
+  const response = await fetch("skills.json");
   if (!response.ok) {
-    throw new Error(`Failed to fetch data: ${response.statusText}`);
+    throw new Error("Error fetching JSON");
   }
-  return response.json(); // Parse the JSON response
-  
-  // .then(data => {
-  //   return data.skills;
-  // })
-  // .catch(error => console.error("Error fetching JSON:", error));
+  return response.json();
 }
 
 $(document).ready(function () {
@@ -42,21 +38,26 @@ $(document).ready(function () {
       "swing"
     );
   });
+  
 
   // Reference the skill container
   const skillContainer = document.getElementById("skill-container");
-    const skills = getSkills();
+  getSkills().then((skills) => {
     skills.forEach((skill) => {
+
       const skillDiv = document.createElement("div");
-      skillDiv.classList.add("skill-box");       
-      skillDiv.innerHTML = `<strong>${skill.name}</strong>: ${skill.level}`;
+      skillDiv.classList.add("skill-box");
+      skillDiv.innerHTML = `<img src=${skill.icon} alt=${skill.name} class="skill-icon">`
+      // skillDiv.innerHTML += `<strong>${skill.name}</strong>`;
       skillContainer.appendChild(skillDiv);
+
     });
+  });
 
   $(window).on("scroll load", function () {
     $("section").each(function () {
       let height = $(this).height();
-      let offset = $(this).offset().top - 200;
+      let offset = $(this).offset().top - 250;
       let top = $(window).scrollTop();
       let id = $(this).attr("id");
 
