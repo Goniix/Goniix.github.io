@@ -137,35 +137,56 @@ div.monolith {
   margin: 1%;
 }
 
+@media screen and (max-width: 600px) {
+  .skill-box {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .skill-box img {
+    max-width: 40px;
+    max-height: 40px;
+  }
+  
+}
 /* PROJECT WRAPPER */
 #project-wrapper {
   display: flex;
   flex-direction: row;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  margin: 0 10px;
+  flex-wrap: nowrap;
   flex-shrink: 1;
+
+  scroll-snap-type: x mandatory;
+  position: relative;
+  overflow-x: scroll;
+
+  margin: 0 10px;
 }
 
 .project-box {
+  background-color: black;
+
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
   justify-content: space-between;
+
   margin-top: 20px;
-  background-color: black;
-  border-radius: 40px;
   padding: 15px;
-  width: fit-content;
+  border-radius: 40px;
+  width: 100%;
+
   scroll-snap-align: start;
-  flex-shrink: 0;
+  
+  
 }
 
 .name-bar {
   display: flex;
   align-items: center;
   background-color: #64657e;
+  filter: drop-shadow(0 0 0.15rem #64657e);
   border-radius: 27px;
-  font-size: 1.5em;
   max-height: 80px;
 }
 
@@ -180,6 +201,9 @@ div.monolith {
 }
 
 @media (max-width: 600px) {
+  #project-wrapper{
+    flex-direction: column;
+  }
   .project-box p {
       font-size: 1em;
   }
