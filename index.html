@@ -13,24 +13,26 @@
     <body>
 
         <div class="topnav" id="myTopnav">
-            <a href="#Intro" class="active">Accueil</a>
-            <a href="#Forma">Formations</a>
-            <a href="#Skills">Compétences</a>
-            <a href="#Projets">Réalisations</a>
-            <a href="#contact">Contact</a>
+            <a href="#Intro" class="active" onclick="setTopnavMode()">Accueil</a>
+            <a href="#Forma" onclick="setTopnavMode()">Formations</a>
+            <a href="#Skills" onclick="setTopnavMode()">Compétences</a>
+            <a href="#Projets" onclick="setTopnavMode()">Réalisations</a>
+            <a href="#contact" onclick="setTopnavMode()">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="setTopnavMode()">
                 <i class="fa fa-bars"></i>
             </a>
         </div>
+
+        
         <div class="main">
             <div class="monolith">
+                <p id="TitleDiv">Salut! Moi c'est Gabriel!</p>
                 <section id="Intro">
-                    <!-- <h1 >Portfolio</h1> -->
-                    <!-- <h2>Gabriel Redouin--Innecco</h2> -->
                     <p>Je m'appelle Gabriel Redouin--Innecco, et je suis en 2ème année de BUT Informatique à Villeneuve-d'Ascq.<br>
-                        Ma passion c'est de créer des jeux pendant mon temps libre (je fais d'autres choses aussi). Jusque là j'ai principalement codé en Java et Python, mais également sous plusieurs moteurs de jeu comme GameMakerStudio2, Unity ou Godot plus récemment. <br>
-                        J'aimerais bien pouvoir avoir la chance d'en faire mon métier plus tard, que ce soit dans studio ou dans une plus petite équipe. Plus généralement, j'aime bien toucher à tout et récement je me suis intéressé au Web avec mes études, ce qui me fait envisager une carrière en tant que Full Stack. <br>
-                        J'apprends vite en testant des choses, je sais m'adapter facilement et j'aime travailler en équipe.
+                        Ma passion c'est de coder des jeux pendant mon temps libre, je me penche également depuis peu sur le WEB et la programation bas niveau. <br>
+                        Curieux naturel, je touche à tout et j'essaye de m'intérresser au plus de domaines possibles, que ce soit en informatique au tout autre chose! <br>
+                        J'apprends vite en testant des choses, je sais m'adapter facilement et j'aime travailler en équipe. <br>
+                        J'adore rencontrer et parler avec des gens, alors n'hésitez pas à me contacter si vous avez des questions ou si vous voulez discuter! <br>
                     </p>
                     <img src="images/bg.jpg" id="bg"/>
                 </section>

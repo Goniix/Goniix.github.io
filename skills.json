@@ -8,7 +8,7 @@
     { "name": "Postgres", "level": "Intermediate" , "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968342.png" },
     { "name": "C#", "level": "Intermediate" , "icon": "https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png" },
     { "name": "React", "level": "Intermediate" , "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" },
-    { "name": "Git", "level": "Intermediate" , "icon": "https://cdn3d.iconscout.com/3d/free/thumb/free-git-9294878-7578021.png?f=webp" },
+    { "name": "Git", "level": "Intermediate" , "icon": "https://cdn-icons-png.flaticon.com/256/25/25231.png" },
     { "name": "C", "level": "Intermediate" , "icon": "https://img.icons8.com/?size=512&id=40670&format=png" },
     { "name": "Python", "level": "Intermediate" , "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/800px-Python-logo-notext.svg.png" },
     { "name": "JavaFx", "level": "Intermediate" , "icon": "https://www.qftest.com/fileadmin/Webdata/logos-icons/JavaFX.png" },
