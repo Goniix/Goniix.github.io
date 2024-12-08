@@ -117,13 +117,12 @@ div.monolith{
 }
 
 .project-box{
-    /* display: flex;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
     overflow-x: hidden;
     max-width: inherit;
     flex-shrink: 1; /* Added to allow shrinking */
- */
-
 
     margin-top: 20px;
     background-color: black;
@@ -170,7 +169,6 @@ div.monolith{
     white-space: nowrap;
     padding: 1%;
     max-height: 140px;
-
 }
 
 .clickable-image{
