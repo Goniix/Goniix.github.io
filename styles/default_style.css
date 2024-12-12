@@ -166,6 +166,20 @@ div.monolith {
   }
   
 }
+
+.language-box{
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: center; */
+  /* align-items: center; */
+  align-self: flex-start;
+  background-color: black;
+  border-radius: 20px;
+  padding: 3%;
+  margin: 1%;
+  transition: all 0.2s ease-in-out;
+  filter: drop-shadow(0 0 0.15rem #9c9cb1);
+}
 /* PROJECT WRAPPER */
 #project-wrapper {
   display: flex;
