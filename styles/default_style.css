@@ -38,7 +38,7 @@ a {
 }
 
 /* MAIN DIV */
-div.main {
+#main {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,7 +88,7 @@ div.main {
 }
 
 /* MONOLITH DIV */
-div.monolith {
+#monolith {
   display: flex;
   flex-direction: column;
   align-items: baseline;
@@ -399,4 +399,36 @@ form button {
   #contactInfo p {
     font-size: 1em;
   }
+}
+
+.tooltip {
+  position: relative;
+  /* display: inline-block; */
+  cursor: pointer; /* Optional, for better UX */
+  opacity: 1;
+}
+
+.tooltip:after {
+  content: attr(data-tooltip); /* Ensure the pseudo-element exists */
+  position: absolute;
+  opacity: 0; /* Hidden by default */
+  visibility: hidden; /* Not visible by default */
+  transition: opacity 0.3s, visibility 0.3s; /* Smooth transition */
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  bottom: 125%; /* Above the tooltip element */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.tooltip:hover:after {
+  opacity: 1; /* Make it visible */
+  visibility: visible;
 }

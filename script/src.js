@@ -40,6 +40,7 @@ $(document).ready(function () {
   });
   
 
+
   // Reference the skill container
   const skillContainer = document.getElementById("skill-container");
   getSkills().then((skills) => {
@@ -47,6 +48,9 @@ $(document).ready(function () {
 
       const skillDiv = document.createElement("div");
       skillDiv.classList.add("skill-box");
+      skillDiv.classList.add("tooltip");
+      skillDiv.setAttribute("data-tooltip",skill.name+" - "+skill.level);
+
       skillDiv.innerHTML = `<img src=${skill.icon} alt=${skill.name} class="skill-icon">`
       // skillDiv.innerHTML += `<strong>${skill.name}</strong>`;
       skillContainer.appendChild(skillDiv);
@@ -54,10 +58,13 @@ $(document).ready(function () {
     });
   });
 
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
   $(window).on("scroll load", function () {
     $("section").each(function () {
       let height = $(this).height();
-      let offset = $(this).offset().top - 250;
+      let offset = $(this).offset().top - 600;
       let top = $(window).scrollTop();
       let id = $(this).attr("id");
 
@@ -67,4 +74,6 @@ $(document).ready(function () {
       }
     });
   });
+
+  
 });
