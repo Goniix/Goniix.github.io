@@ -70,6 +70,9 @@ div.main {
 }
 #Intro p{
   margin-left: 2%;
+  margin-right: 8%;
+  text-align: justify;
+  max-width: 50%;
 }
 
 #Intro img {
@@ -217,7 +220,7 @@ div.monolith {
   margin: 1%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   #project-wrapper{
     flex-direction: column;
   }
@@ -343,3 +346,43 @@ div.monolith {
 }
 
 
+#Contact {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#contactBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#Contact form {
+  margin-left: 3%;
+  width: 50%;
+}
+
+form button {
+  align-self: flex-end;
+}
+
+#contactInfo{
+  width: 40%;
+}
+#contactInfo p {
+  margin-left: 3%;
+
+}
+
+@media (max-width: 600px) {
+  #contactBox {
+      flex-direction: column;
+  }
+  #contactInfo{
+    width: 100%;
+  }
+  #contactInfo p {
+    font-size: 1em;
+  }
+}
