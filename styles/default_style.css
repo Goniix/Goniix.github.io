@@ -14,6 +14,11 @@ body {
   font: 1em hammersmith;
   margin: 0;
 }
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+}
 
 /* SECTION SPACING */
 section {
@@ -68,6 +73,12 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  #Intro{
+    flex-direction: column; 
+  }
+}
+
 #Intro p{
   margin-left: 2%;
   margin-right: 8%;
@@ -103,10 +114,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: black;
   border-radius: 20px;
   padding: 3%;
   margin: 1%;
+  width: 100%;
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(0 0 0.15rem #9c9cb1);
 }
@@ -143,6 +156,7 @@ a {
   padding: 3%;
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(0 0 0.15rem #9c9cb1);
+  z-index: 1;
 }
 
 .skill-box:hover {
@@ -393,7 +407,11 @@ form button {
   #contactBox {
       flex-direction: column;
   }
+  #contactBox form {
+    width: 100%;
+  }
   #contactInfo{
+    margin-top: 8%;
     width: 100%;
   }
   #contactInfo p {

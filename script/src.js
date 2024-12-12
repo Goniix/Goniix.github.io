@@ -64,7 +64,7 @@ $(document).ready(function () {
   $(window).on("scroll load", function () {
     $("section").each(function () {
       let height = $(this).height();
-      let offset = $(this).offset().top - 600;
+      let offset = $(this).offset().top - 500;
       let top = $(window).scrollTop();
       let id = $(this).attr("id");
 
