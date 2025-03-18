@@ -32,7 +32,7 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate(
       {
-        scrollTop: $($(this).attr("href")).offset().top -100,
+        scrollTop: $($(this).attr("href")).offset().top -150,
       },
       500,
       "swing"
