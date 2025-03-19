@@ -1,10 +1,12 @@
-/* FONT FACE */
 @font-face {
   font-family: hammersmith;
   src: url(HammersmithOne-Regular.ttf);
 }
 
-/* BODY STYLING */
+html {
+  background-color: black;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -20,36 +22,30 @@ body {
   }
 }
 
-/* SECTION SPACING */
 section {
   margin: 50px 0;
 }
 section h1 {
   font-size: 2em;
-  margin: 0;
   align-self: baseline;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
 }
 
-/* PARAGRAPHS */
 p {
   font-size: 1.2em;
 }
 
-/* LINKS */
 a {
   color: purple;
   text-decoration: none;
 }
 
-/* MAIN DIV */
-#main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+/*#main {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: center;*/
+/*}*/
 
-/* TITLE DIV */
 #TitleDiv {
   margin: 300px 0;
   text-shadow: 0 0 2px white;
@@ -72,37 +68,37 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  & p{
+    margin-left: 2%;
+    margin-right: 8%;
+    text-align: justify;
+    max-width: 50%;
+  }
+
+  & img {
+    max-width: 20%;
+    border-radius: 15px;
+    margin: 2%;
+    filter: drop-shadow(0 0 0.75rem purple);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
+
 @media screen and (max-width: 600px) {
   #Intro{
     flex-direction: column; 
   }
 }
 
-#Intro p{
-  margin-left: 2%;
-  margin-right: 8%;
-  text-align: justify;
-  max-width: 50%;
-}
-
-#Intro img {
-  max-width: 20%;
-  border-radius: 15px;
-  margin: 2%;
-  filter: drop-shadow(0 0 0.75rem purple);
-  transition: all 0.2s ease-in-out;
-}
-
-#Intro img:hover {
-  transform: scale(1.1);
-}
-
-/* MONOLITH DIV */
 #monolith {
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: baseline;*/
   background-image: linear-gradient(black, #1a1b1f);
   width: 85%;
   padding: 4% 4% 20px;
@@ -126,9 +122,9 @@ a {
 
 /* SKILLS SECTION */
 #Skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*align-items: center;*/
   max-height: 100%;
 }
 
@@ -157,18 +153,18 @@ a {
   transition: all 0.2s ease-in-out;
   filter: drop-shadow(0 0 0.15rem #9c9cb1);
   z-index: 1;
-}
 
-.skill-box:hover {
-  background-color: #aaa7c2;
-  transform: scale(1.1);
-}
+  &:hover {
+    background-color: #aaa7c2;
+    transform: scale(1.1);
+  }
 
-.skill-box img {
-  max-width: 100px;
-  max-height: 100px;
-  border-radius: 5px;
-  margin: 1%;
+  & img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 5px;
+    margin: 1%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -185,10 +181,6 @@ a {
 }
 
 .language-box{
-  /* display: flex; */
-  /* flex-direction: column;
-  justify-content: center; */
-  /* align-items: center; */
   align-self: flex-start;
   background-color: black;
   border-radius: 20px;
@@ -283,6 +275,10 @@ a {
   top: 0;
   z-index: 10;
 
+  & .navbar-brand {
+    border-radius: 5px;
+  }
+
   a {
     color: #f2f2f2;
     text-align: center;
@@ -302,13 +298,13 @@ a {
 }
 
 /* SECTION ID STYLING */
-#home,
-#formation,
-#compet,
-#real,
-#contact {
-  scroll-margin-top: 100px;
-}
+/*#home,*/
+/*#formation,*/
+/*#compet,*/
+/*#real,*/
+/*#contact {*/
+/*  scroll-margin-top: 100px;*/
+/*}*/
 
 /* CAROUSEL BUTTONS */
 .carousel-button {
@@ -330,7 +326,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 0 200px;
+  margin: 10px 0 0px;
 }
 
 
@@ -338,6 +334,15 @@ a {
   display: flex;
   flex-direction: column;
   width: 80%;
+
+  & form{
+    margin-left: 3%;
+    width: 50%;
+    & button{
+      align-self: flex-end;
+
+    }
+  }
 }
 
 #contactBox {
@@ -346,21 +351,13 @@ a {
   justify-content: space-between;
 }
 
-#Contact form {
-  margin-left: 3%;
-  width: 50%;
-}
-
-form button {
-  align-self: flex-end;
-}
 
 #contactInfo{
   width: 40%;
-}
-#contactInfo p {
-  margin-left: 3%;
 
+  & p{
+    margin-left: 3%;
+  }
 }
 
 @media (max-width: 600px) {
