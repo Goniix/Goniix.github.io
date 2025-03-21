@@ -9,12 +9,12 @@ function setTopnavMode() {
 }
 
 function scrollCarousel(direction) {
-	const wrapper = document.getElementById('project-wrapper');
+	const wrapper = document.getElementById("project-wrapper");
 	const scrollAmount = wrapper.clientWidth;
-	if (direction === 'left') {
-		wrapper.scrollBy({left: -scrollAmount, behavior: 'smooth'});
+	if (direction === "left") {
+		wrapper.scrollBy({ left: -scrollAmount, behavior: "smooth" });
 	} else {
-		wrapper.scrollBy({left: scrollAmount, behavior: 'smooth'});
+		wrapper.scrollBy({ left: scrollAmount, behavior: "smooth" });
 	}
 }
 
@@ -31,18 +31,20 @@ async function getSkills() {
 const skillContainer = document.querySelector("#skill-container");
 getSkills().then((skills) => {
 	skills.forEach((skill) => {
-
 		const skillDiv = document.createElement("div");
 		skillDiv.classList.add("skill-box");
 		skillDiv.classList.add("tooltip");
 		skillDiv.setAttribute("data-tooltip", skill.name + " - " + skill.level);
 
-		skillDiv.innerHTML = `<img src=${skill.icon} alt=${skill.name} class="skill-icon">`
+		skillDiv.innerHTML = `<img src=${skill.icon} alt=${skill.name} class="skill-icon">`;
 		// skillDiv.innerHTML += `<strong>${skill.name}</strong>`;
 		skillContainer.appendChild(skillDiv);
-
 	});
 });
 
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipTriggerList = document.querySelectorAll(
+	'[data-bs-toggle="tooltip"]'
+);
+const tooltipList = [...tooltipTriggerList].map(
+	(tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+);

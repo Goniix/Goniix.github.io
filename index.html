@@ -1,212 +1,285 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang = "fr">
 <head>
-	<title>Portfolio</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/icon.ico" />
+  <title>Portfolio</title>
+  <meta charset = "utf-8"/>
+  <meta name = "viewport" content = "width=device-width, initial-scale=1"/>
+  <link rel = "icon" href = "images/icon.ico"/>
 
-	<link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="styles/default_style.css" rel="stylesheet" type="text/css">
+  <link href = "styles/bootstrap.min.css" rel = "stylesheet" type = "text/css"/>
+  <link href = "styles/default_style.css" rel = "stylesheet" type = "text/css"/>
 
-	<script src="script/bootstrap.bundle.js" defer></script>
-	<script src="script/src.js" defer></script>
+  <script src = "script/bootstrap.bundle.js" defer></script>
+  <script src = "script/src.js" defer></script>
 </head>
 
-<nav class="navbar navbar-expand-lg px-3 mb-3" id="navbar">
-	<a class="navbar-brand" href="#">Goniix</a>
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
-					aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
+<nav class = "navbar navbar-expand-lg px-3 mb-3" id = "navbar">
+  <a class = "navbar-brand" href = "#">Goniix</a>
+  <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarCollapse"
+          aria-controls = "navbarCollapse" aria-expanded = "false" aria-label = "Toggle navigation">
+    <span class = "navbar-toggler-icon"></span>
+  </button>
 
-	<div class="collapse navbar-collapse" id="navbarCollapse">
-		<ul class="nav nav-pills">
-			<li class="nav-item">
-				<a class="nav-link" href="#Intro">Accueil</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#Forma">Formations</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#Skills">Compétences</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#Projets">Réalisations</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#Contact">Contact</a>
-			</li>
-		</ul>
-	</div>
+  <div class = "collapse navbar-collapse" id = "navbarCollapse">
+    <ul class = "nav nav-pills">
+      <li class = "nav-item">
+        <a class = "nav-link" href = "#Intro">Accueil</a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link" href = "#Forma">Formations</a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link" href = "#Skills">Compétences</a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link" href = "#Projets">Réalisations</a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link" href = "#Contact">Contact</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-<body data-bs-spy="scroll" data-bs-target="#navbar">
 
-<div id="main" class="d-flex flex-row justify-content-center">
-	<div id="monolith" class="d-flex flex-column align-baseline">
-		<p id="TitleDiv">Salut ! Moi, c'est Gabriel !</p>
-		<section id="Intro">
-			<p>Je m'appelle Gabriel Redouin Innecco, et je suis en 2ᵉ année de BUT Informatique à
-				Villeneuve-d'Ascq. Ma passion, c'est de coder des jeux pendant mon temps libre, je me penche
-				également depuis peu sur le WEB et la programmation bas niveau. Curieux naturel, je suis
-				touche à tout et j'essaye de m'intéresser au plus de domaines possibles, que ce soit en
-				informatique au toute autre chose ! J'apprends vite en testant des choses, je sais m'adapter
-				facilement, aussi bien à de nouvelles situations qu'à de nouvelles technologies, et j'aime
-				travailler en équipe. <br> J'adore rencontrer et parler avec des gens, alors n'hésitez pas à
-				me contacter si vous avez des questions ou si vous voulez discuter ! Je cherche une
-				alternance pour l'année prochaine et le master après, donc si vous avez des opportunités, je
-				suis preneur ! </p>
-			<img src="images/bg.jpg" id="bg" alt="l'image du bg" />
-		</section>
-		<section id="Forma">
-			<h1>Formations</h1>
-			<div class="school-box">
-				<h3>BUT Informatique</h3>
-				<p>Université de Lille, Villeneuve-d'Ascq <i>(2023 - Présent)</i></p>
-				<p>Actuellement en 2ᵉ année, j'apprends la programmation orientée web et système.</p>
-			</div>
-			<div class="school-box">
-				<h3>Baccalauréat Scientifique</h3>
-				<p>Lycée Yves-Kernaneck, Lille <i>(2020 - 2023)</i></p>
-				<p>Spécialité Mathématiques et Numérique Science de l'Informatique. Bac mention très
-					bien</p>
-			</div>
-		</section>
+<body data-bs-spy = "scroll" data-bs-target = "#navbar">
+<div id = "main" class = "d-flex flex-row justify-content-center">
+  <div id = "monolith" class = "d-flex flex-column align-baseline">
+    <p id = "TitleDiv">Salut ! Moi, c'est Gabriel !</p>
+    <section id = "Intro">
+      <p>
+        Je m'appelle Gabriel Redouin Innecco, et je suis en 2ᵉ année de BUT Informatique à Villeneuve-d'Ascq. Ma
+        passion, c'est de coder des jeux pendant mon temps libre, je me penche également depuis peu sur le WEB et la
+        programmation bas niveau. Curieux naturel, je suis touche à tout et j'essaye de m'intéresser au plus de domaines
+        possibles, que ce soit en informatique au toute autre chose ! J'apprends vite en testant des choses, je sais
+        m'adapter facilement, aussi bien à de nouvelles situations qu'à de nouvelles technologies, et j'aime travailler
+        en équipe. <br/> J'adore rencontrer et parler avec des gens, alors n'hésitez pas à me contacter si vous avez des
+        questions ou si vous voulez discuter ! Je cherche une alternance pour l'année prochaine et le master après, donc
+        si vous avez des opportunités, je suis preneur !
+      </p>
+      <img src = "images/bg.jpg" id = "bg" alt = "l'image du bg"/>
+    </section>
+    <section id = "Forma">
+      <h1>Formations</h1>
+      <div class = "school-box">
+        <h3>BUT Informatique</h3>
+        <p>
+          Université de Lille, Villeneuve-d'Ascq <i>(2023 - Présent)</i>
+        </p>
+        <p>
+          Actuellement en 2ᵉ année, j'apprends la programmation orientée web et système.
+        </p>
+      </div>
+      <div class = "school-box">
+        <h3>Baccalauréat Scientifique</h3>
+        <p>Lycée Yves-Kernaneck, Lille <i>(2020 - 2023)</i></p>
+        <p>
+          Spécialité Mathématiques et Numérique Science de l'Informatique. Bac mention très bien
+        </p>
+      </div>
+    </section>
 
-		<section id="Skills" class="d-flex flex-column align-content-center">
-			<h1>Compétences</h1>
-			<div id="skill-container">
+    <section id = "Skills" class = "d-flex flex-column align-content-center">
+      <h1>Compétences</h1>
+      <div id = "skill-container"></div>
+    </section>
+    <section id = "Projets">
+      <h1>Réalisations</h1>
+      <div id = "carousel-container">
+        <button class = "carousel-button left" onclick = "scrollCarousel('left')">
+          &#10094;
+        </button>
+        <div id = "project-wrapper">
+          <div class = "project-box">
+            <div class = "name-bar">
+              <img src = "images/Inscrube/InscrubeIcon.png" alt = "InscrubeIcon"/>
+              <h5>Inscrube / Agaet</h5>
+            </div>
+            <p>
+              <b>Inscrube / Agaet</b> est un projet de jeu de carte de type TCG que je développe actuellement. Il est
+                                      entièrement développé sous <i>Godot</i>, prévu pour mobile et PC. J'ai pour but
+                                      d'implémenter un mode duel en ligne, ainsi qu'un mode solo roguelike.<br/> L'idée
+                                      du jeu m'est venue en jouant à une version <i>Tabletop Simulator</i> de <i>Inscryption</i>
+                                      en 1 contre 1. Le jeu est pour l'instant assez inspiré de Inscryption, et utilise
+                                      ses sprites comme place holder. Je pense à terme les remplacer par des sprites
+                                      originaux, dans le thème des constellations.<br/> Si vous le souhaitez, les
+                                      fichiers ainsi qu'un <a href = "https://github.com/Goniix/Inscrube/wiki"
+                                                              target = "_blank" rel = "noopener noreferrer">wiki</a> est en cours d'écriture sont disponibles sur le <a
+                href = "https://github.com/Goniix/Inscrube" target = "_blank" rel = "noopener noreferrer">dépot github du projet</a> pour plus d'information sur le jeu.
+            </p>
+            <div class = "tech-bar">
+              <span class = "tech">Godot</span>
+            </div>
+            <div class = "screen-bar">
+              <img class = "clickable-image" src = "images/Inscrube/main%20screen.png" alt = "inscrube main screen"
+                   onclick = "window.open(this.src, '_blank');"/>
+            </div>
+          </div>
+          <div class = "project-box">
+            <div class = "name-bar">
+              <img src = "images/TDB/lifes_icon_big_red.png" alt = "TDBIcon"/>
+              <h5>Not to dash</h5>
+            </div>
+            <p>
+              <b>Not to dash</b> est une démo de jeu de plateforme que j'ai réalisée en 2023 quand je voulais intégrer
+              <i>Piktura</i> (<i>Pole3D</i> à ce moment-là).<br/> Le projet est construit sur la base de mon tout
+                                 premier projet de jeu sur <i><a href = "https://gamemaker.io/fr" target = "_blank">GameMakerStudio2</a></i>,
+                                 surtout utilisé à mes débuts pour apprendre le développement de jeux. Le projet devait
+                                 être un roguelike à génération de terrain procédural, ce qui était beaucoup trop
+                                 ambitieux pour l'époque. J'ai appris énormément sur ce projet, que ce soit au niveau
+                                 code, mais aussi au niveau game-design et sprite.<br/> La demo a pour but de montrer le
+                                 fonctionnement d'un moteur simple de jeu de plateforme, sur un niveau introduisant
+                                 plusieurs mécaniques (pièces à ramasser, pièges, bonus, etc.) au cours du niveau.<br/>
+                                 Le projet n'a pas de dépot, mais vous pouvez télécharger les fichiers compilés <a
+                href = "https://drive.google.com/file/d/1DWAHs0fo1GDaBLuKA4rUn4-1LJ2_qU5g/view?usp=drive_link"
+                target = "_blank" rel = "noopener noreferrer">ici</a>.
+            </p>
+            <div class = "tech-bar">
+              <span class = "tech">GamemakerStudio2</span>
+            </div>
+            <div class = "screen-bar">
+              <img class = "clickable-image" src = "images/TDB/level.png" alt = "tdb level"
+                   onclick = "window.open(this.src, '_blank');"/>
+            </div>
+          </div>
+          <div class = "project-box">
+            <div class = "name-bar">
+              <img src = "images/5968282.png" alt = "TDBIcon"/>
+              <h5>Projet classification</h5>
+            </div>
+            <p>
+              C'est un projet réalisé en groupe au cours d'un projet SAE de programmation orientée objet. Le but était
+              de réaliser une application capable d'afficher et manipuler des jeux de données en format CSV. Il fallait
+              ensuite implémenter des algorithmes de calcul de proximité entre les données, afin de classifier des
+              nouvelles données par rapport aux données déjà présentes en fonction de leurs caractéristiques. Ces
+              données étaient ensuite visualisables dans un graphe aux axes manipulable. Le projet m'a permis
+              d'améliorer mon organisation lors de travaux de groupe. C'était notamment complexe due à la nature
+              imbriquée et interdépendante de la combinaison des technologies utilisées et des taches demandées. J'ai dû
+              réaliser un système de graphes intéractif de 0, ce qui m'a fait progresser sur mes compétences techniques.
+              Réalisé au côté de <a href = "https://gaspard4i.github.io/">Gaspard4I</a> et de <a
+                href = "https://tom2824.github.io/">Sun</a>.
 
-			</div>
-		</section>
-		<section id="Projets">
-			<h1>Réalisations</h1>
-			<div id="carousel-container">
-				<button class="carousel-button left" onclick="scrollCarousel('left')">&#10094;</button>
-				<div id="project-wrapper">
+            </p>
+            <div class = "tech-bar">
+              <span class = "tech">JavaFX</span>
+            </div>
+            <div class = "screen-bar">
+              <img class = "clickable-image" src = "images/Capture_decran_2025-03-21_185312.png" alt = "tdb level"
+                   onclick = "window.open(this.src, '_blank');"/>
+              <img class = "clickable-image" src = "images/Capture_decran_2025-03-21_185332.png" alt = "tdb level"
+                   onclick = "window.open(this.src, '_blank');"/>
+            </div>
+          </div>
+          <div class = "project-box">
+            <div class = "name-bar">
+              <img src = "images/5968282.png" alt = "TDBIcon"/>
+              <h5>Matterleast</h5>
+            </div>
+            <p>
+              Un autre projet de SAE, cette fois en cours de WEB également réalisé en companies de <a
+                href = "https://tom2824.github.io/">Sun</a>.
+              Le but du projet était de réaliser une webapp de messagerie. Dans le cahier des charges, il fallait
+              notamment pouvoir ajouter et envoyer des messages à des amis, créer des groupes de discussion, et pouvoir
+              envoyer des fichiers. Une api REST simple devait permettre l'accès parallel aux données de la base de
+              données. J'ai beaucoup progressé en design web grâce à cette SAE, car il fallait créer un style original
+              pour l'application. J'ai aussi progressé en qualité de code de manière générale. Le plus compliqué était
+              l'interdiction d'utiliser des requêtes ajax ou du Javascript pour toute autre chose que de la mise en forme
+              (pas de manipulation du DOM).
+            </p>
+            <div class = "tech-bar">
+              <span class = "tech">Java EE</span><span class = "tech">PostgreSQL</span><span
+                class = "tech">Javascript</span><span class = "tech">Bootstrap</span>
+            </div>
+            <div class = "screen-bar">
+              <img class = "clickable-image" src = "images/Capture_decran_2025-03-21_185715.png" alt = "tdb level"
+                   onclick = "window.open(this.src, '_blank');"/>
+            </div>
+          </div>
+          <div class = "project-box">
+            <div class = "name-bar">
+              <img src = "images/bbk/bombitKid.png" alt = "BIKicon"/>
+              <h5>Bomb It Kid</h5>
+            </div>
+            <p>
+              <b>BombItKid</b> est un petit <i>Bomberman</i> créé à l'occasion de la <a
+                href = "https://www.nuitducode.net/" target = "_blank">Nuit du Code</a> avec des amis en 8h. Il est codé en Python avec le framework Pyxel. Ce projet a été pour moi ma premièreexpérience de projet de groupe réussie. Le jeu a été nominé parmi les 3 meilleurs jeux de l'année 2023.<br/> Le <a
+                href = "images/bbk/ndc.py" download = "ndc.py" target = "_blank">script</a> ainsi que <a
+                href = "images/bbk/my_resource.pyxres" download = "my_resource.pyxres">les ressources</a> peuvent être lancés via la commande <i>pyxel run ndc.py</i> depuis le dossier où les 2 fichiers se
+                               trouvent (<a href = "https://github.com/kitao/pyxel">Pyxel</a> doit être installé sur la
+                               machine)
+            </p>
+            <div class = "tech-bar">
+              <span class = "tech">Python</span><span class = "tech">Pyxel</span>
+            </div>
+            <div class = "screen-bar">
+              <img class = "clickable-image" src = "images/bbk/bbkscreen.png" alt = "bbk game"
+                   onclick = "window.open(this.src, '_blank');"/>
+            </div>
+          </div>
+          <div class = "project-box">
+            <div class = "name-bar">
+              <img src = "images/btg/GoldGAME.png" alt = "BTGicon"/>
+              <h5>Back to the Gate</h5>
+            </div>
+            <p>
+              <b>Back to the Gate</b> est une démo d'un jeu 4x et jeu de carte en 3d isométrique développé à l'aide de
+              <a href = "https://gamemaker.io/fr" target = "_blank">GameMakerStudio2</a>. Je codais ce jeu à la base comme un projet personnel, mais comme je passais plus de temps sur d'autres
+                                      projets en même temps, je ne l'ai jamais fini.<br/> À ce moment-là mon objectif
+                                      était d'intégrer <i>Piktura</i> (<i>Pole3D</i>), j'ai donc utilisé cette démo pour
+                                      illustrer un <a
+                href = "https://docs.google.com/document/d/1PrTtyW18VwTQcpks5fPH4uom9Q7F6mEJK2TvqgoNgi8/edit?usp=drive_link"
+                target = "_blank">game concept</a> de mon dossier d'admission, qui parle de développements possibles sur le Lore et le gameplay du jeu.<br/>
+                                      Vous trouverez <a
+                href = "https://drive.google.com/file/d/1LC50SAsIDNpLbM87DjAyCmgFkPUwAWHW/view?usp=drive_link"
+                target = "_blank" rel = "noopener noreferrer">ici</a> le lien vers un zip contenant l'exécutable du jeu.
+            </p>
+            <div class = "tech-bar">
+              <span class = "tech">GamemakerStudio2</span>
+            </div>
+            <div class = "screen-bar">
+              <img class = "clickable-image" src = "images/btg/game%20screen.png" alt = "btg game"
+                   onclick = "window.open(this.src, '_blank');"/>
+            </div>
+          </div>
+        </div>
+        <button class = "carousel-button right" onclick = "scrollCarousel('right')">
+          &#10095;
+        </button>
+      </div>
+    </section>
+    <section id = "Contact">
+      <h1>Contact</h1>
+      <div id = "contactBox">
+        <form action = "mailto:gabriel.redouin@gmail.com">
+          <div class = "mb-3">
+            <label for = "emailField" class = "form-label">Votre adresse mail</label> <input type = "email"
+                                                                                             class = "form-control"
+                                                                                             id = "emailField"
+                                                                                             placeholder = "vous@mail.com"/>
+          </div>
+          <div class = "mb-3">
+            <label for = "message" class = "form-label">Message</label> <textarea class = "form-control"
+                                                                                  name = "message" rows = "6"
+                                                                                  id = "message"></textarea>
+          </div>
 
-					<div class="project-box">
-						<div class="name-bar">
-							<img src="images/Inscrube/InscrubeIcon.png" alt="InscrubeIcon">
-							<h5>Inscrube / Agaet</h5>
-						</div>
-						<p><b>Inscrube / Agaet</b> est un projet de jeu de carte de type TCG que je développe
-							actuellement. Il est entièrement développé sous <i>Godot</i>, prévu pour mobile et PC.
-							J'ai pour but d'implémenter un mode duel en ligne, ainsi qu'un mode solo
-							roguelike.<br> L'idée du jeu m'est venue en jouant à une version <i>Tabletop
-								Simulator</i> de <i>Inscryption</i> en 1 contre 1. Le jeu est pour l'instant assez
-							inspiré de Inscryption, et utilise ses sprites comme place holder. Je pense à terme
-							les remplacer par des sprites originaux, dans le thème des constellations.<br> Si vous
-							le souhaitez, les fichiers ainsi qu'un <a
-											href="https://github.com/Goniix/Inscrube/wiki" target="_blank"
-											rel="noopener noreferrer">wiki</a> est en cours d'écriture sont disponibles
-							sur le <a href="https://github.com/Goniix/Inscrube" target="_blank"
-											rel="noopener noreferrer">dépot github du projet</a> pour plus d'information
-							sur le jeu.</p>
-						<div class="screen-bar">
-							<img class="clickable-image" src="images/Inscrube/main%20screen.png"
-											alt="inscrube main screen" onclick="window.open(this.src, '_blank');">
-						</div>
-					</div>
-					<div class="project-box">
-						<div class="name-bar">
-							<img src="images/TDB/lifes_icon_big_red.png" alt="TDBIcon">
-							<h5>Not to dash</h5>
-						</div>
-						<p><b>Not to dash</b> est une démo de jeu de plateforme que j'ai réalisée en 2023 quand
-							je voulais intégrer <i>Piktura</i> (<i>Pole3D</i> à ce moment-là).<br> Le projet est
-							construit sur la base de mon tout premier projet de jeu sur <i><a
-											href="https://gamemaker.io/fr" target="_blank">GameMakerStudio2</a></i>,
-							surtout utilisé à mes débuts pour apprendre le développement de jeux. Le projet devait
-							être un roguelike à génération de terrain procédural, ce qui était beaucoup trop
-							ambitieux pour l'époque. J'ai appris énormément sur ce projet, que ce soit au niveau
-							code, mais aussi au niveau game-design et sprite.<br> La demo a pour but de montrer le
-							fonctionnement d'un moteur simple de jeu de plateforme, sur un niveau introduisant
-							plusieurs mécaniques (pièces à ramasser, pièges, bonus, etc.) au cours du niveau.<br>
-							Le projet n'a pas de dépot, mais vous pouvez télécharger les fichiers compilés <a
-											href="https://drive.google.com/file/d/1DWAHs0fo1GDaBLuKA4rUn4-1LJ2_qU5g/view?usp=drive_link"
-											target="_blank" rel="noopener noreferrer">ici</a>.</p>
-						<div class="screen-bar">
-							<img class="clickable-image" src="images/TDB/level.png" alt="tdb level"
-											onclick="window.open(this.src, '_blank');">
-						</div>
-					</div>
-					<div class="project-box">
-						<div class="name-bar">
-							<img src="images/bbk/bombitKid.png" alt="BIKicon">
-							<h5>Bomb It Kid</h5>
-						</div>
-						<p><b>BombItKid</b> est un petit <i>Bomberman</i> créé à l'occasion de la <a
-										href="https://www.nuitducode.net/" target="_blank">Nuit du Code</a> avec des
-							amis en 8h. Il est codé en Python avec le framework Pyxel. Ce projet a été pour moi ma
-							première expérience de projet de groupe réussie. Le jeu a été nominé parmi les 3
-							meilleurs jeux de l'année 2023.<br> Le <a href="images/bbk/ndc.py" download="ndc.py"
-											target="_blank">script</a> ainsi que <a href="images/bbk/my_resource.pyxres"
-											download="my_resource.pyxres">les ressources</a> peuvent être lancés via la
-							commande <i>pyxel run ndc.py</i> depuis le dossier où les 2 fichiers se trouvent (<a
-											href="https://github.com/kitao/pyxel">Pyxel</a> doit être installé sur la
-							machine)</p>
-						<div class="screen-bar">
-							<img class="clickable-image" src="images/bbk/bbkscreen.png" alt="bbk game"
-											onclick="window.open(this.src, '_blank');">
-						</div>
-					</div>
-					<div class="project-box">
-						<div class="name-bar">
-							<img src="images/btg/GoldGAME.png" alt="BTGicon">
-							<h5>Back to the Gate</h5>
-						</div>
-						<p><b>Back to the Gate</b> est une démo d'un jeu 4x et jeu de carte en 3d isométrique
-							développé à l'aide de <a href="https://gamemaker.io/fr" target="_blank">GameMakerStudio2</a>.
-							Je codais ce jeu à la base comme un projet personnel, mais comme je passais plus de
-							temps sur d'autres projets en même temps, je ne l'ai jamais fini.<br> À ce moment-là
-							mon objectif était d'intégrer <i>Piktura</i> (<i>Pole3D</i>), j'ai donc utilisé cette
-							démo pour illustrer un <a
-											href="https://docs.google.com/document/d/1PrTtyW18VwTQcpks5fPH4uom9Q7F6mEJK2TvqgoNgi8/edit?usp=drive_link"
-											target="_blank">game concept</a> de mon dossier d'admission, qui parle de
-							développements possibles sur le Lore et le gameplay du jeu.<br> Vous trouverez <a
-											href="https://drive.google.com/file/d/1LC50SAsIDNpLbM87DjAyCmgFkPUwAWHW/view?usp=drive_link"
-											target="_blank" rel="noopener noreferrer">ici</a> le lien vers un zip
-							contenant l'exécutable du jeu.</p>
-						<div class="screen-bar">
-							<img class="clickable-image" src="images/btg/game%20screen.png" alt="btg game"
-											onclick="window.open(this.src, '_blank');">
-						</div>
-					</div>
-
-				</div>
-				<button class="carousel-button right" onclick="scrollCarousel('right')">&#10095;</button>
-			</div>
-		</section>
-		<section id="Contact">
-			<h1>Contact</h1>
-			<div id="contactBox">
-				<form action="mailto:gabriel.redouin@gmail.com">
-					<div class="mb-3">
-						<label for="emailField" class="form-label">Votre adresse mail</label>
-						<input type="email" class="form-control" id="emailField" placeholder="vous@mail.com">
-					</div>
-					<div class="mb-3">
-						<label for="message" class="form-label">Message</label>
-						<textarea class="form-control" name="message" rows="6" id="message"></textarea>
-					</div>
-
-					<button type="submit" class="btn btn-outline-light">Submit</button>
-				</form>
-				<div id="contactInfo">
-					<h2>Informations : </h2>
-					<p><strong>Téléphone : </strong>(+33) 7 87 64 15 91</p>
-					<p><strong>Mail : </strong>gabriel.redouin@gmail.com</p>
-					<p><a href="https://github.com/Goniix"><strong>Github</strong></a></p>
-					<p><a href="https://www.linkedin.com/in/gabriel-redouin-innecco-2aa69a279/"><strong>Linkedin</strong></a>
-					</p>
-				</div>
-			</div>
-
-		</section>
-	</div>
+          <button type = "submit" class = "btn btn-outline-light">
+            Submit
+          </button>
+        </form>
+        <div id = "contactInfo">
+          <h2>Informations :</h2>
+          <p><strong>Téléphone : </strong>(+33) 7 87 64 15 91</p>
+          <p><strong>Mail : </strong>gabriel.redouin@gmail.com</p>
+          <p>
+            <a href = "https://github.com/Goniix"><strong>Github</strong></a>
+          </p>
+          <p>
+            <a href = "https://www.linkedin.com/in/gabriel-redouin-innecco-2aa69a279/"><strong>Linkedin</strong></a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
-
 </body>
 </html>
