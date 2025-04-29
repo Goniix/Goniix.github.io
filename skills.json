@@ -1,28 +1,23 @@
 [
   {
-    "name": "GameMaker",
-    "level": "Plusieurs projets",
-    "icon": "https://cdn2.steamgriddb.com/icon/e500b7708a865ec27eef36c33953b06e.ico"
-  },
-  {
-    "name": "Godot",
-    "level": "Plusieurs projets",
-    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg"
-  },
-  {
     "name": "Java",
     "level": "Beaucoup utilisé en cours",
     "icon": "https://img.icons8.com/color/240/java-coffee-cup-logo.png"
   },
   {
-    "name": "Java EE",
-    "level": "Beaucoup utilisé en cours",
-    "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/67/Jakarta_ee_logo_stacked.png/1200px-Jakarta_ee_logo_stacked.png"
-  },
-  {
     "name": "TypeScript",
     "level": "Beaucoup utilisé en stage",
     "icon": "https://img.icons8.com/color/240/typescript--v1.png"
+  },
+  {
+    "name": "React",
+    "level": "Beaucoup utilisé en stage",
+    "icon": "https://img.icons8.com/officexs/160/react.png"
+  },
+  {
+    "name": "Java EE",
+    "level": "Beaucoup utilisé en cours",
+    "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/6/67/Jakarta_ee_logo_stacked.png/1200px-Jakarta_ee_logo_stacked.png"
   },
   {
     "name": "JavaScript",
@@ -35,9 +30,19 @@
     "icon": "https://img.icons8.com/color/240/postgreesql.png"
   },
   {
-    "name": "React",
-    "level": "Beaucoup utilisé en stage",
-    "icon": "https://img.icons8.com/officexs/160/react.png"
+    "name": "C#",
+    "level": "En cours d'apprentissage",
+    "icon": "https://img.icons8.com/color/240/c-sharp-logo-2.png"
+  },
+  {
+    "name": "Godot",
+    "level": "Plusieurs projets",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg"
+  },
+  {
+    "name": "GameMaker",
+    "level": "Plusieurs projets",
+    "icon": "https://cdn2.steamgriddb.com/icon/e500b7708a865ec27eef36c33953b06e.ico"
   },
   {
     "name": "HTML 5",
@@ -48,11 +53,6 @@
     "name": "CSS",
     "level": "Beaucoup utilisé",
     "icon": "https://img.icons8.com/color/240/css3.png"
-  },
-  {
-    "name": "C#",
-    "level": "En cours d'apprentissage",
-    "icon": "https://img.icons8.com/color/240/c-sharp-logo-2.png"
   },
   {
     "name": "Git",
